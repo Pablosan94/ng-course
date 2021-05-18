@@ -3,14 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ServerComponent } from "./server/server.component";
+import { ServersComponent } from './servers/servers.component';
+import { FormsModule } from "@angular/forms";
+import { Task2Component } from './task2/task2.component';
+import { Task3Component } from './task3/task3.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent
+    ServerComponent,
+    ServersComponent,
+    Task2Component,
+    Task3Component
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

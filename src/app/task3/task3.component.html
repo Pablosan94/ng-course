@@ -1,0 +1,7 @@
+<button class="btn btn-primary" (click)="toggle()">Display Details</button>
+<span *ngIf="toggled" class="secret">tuna</span>
+<div *ngFor="let time of clicks; let i = index"
+   [ngStyle]="{ backgroundColor: i >= 4 ? 'blue' : 'transparent' }"
+   [ngClass]="{ 'fifth-or-more': i >= 4 }">
+  {{ time | date: 'medium' }}
+</div>
